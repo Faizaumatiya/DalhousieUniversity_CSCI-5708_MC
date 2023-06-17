@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Title"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/notes_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Body"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:maxLines="7"
+            android:gravity="top"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="SAVE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </FrameLayout>
+
+</LinearLayout>
+
+<!-- Code Reference:
+ [1] https://www.youtube.com/watch?v=or_pH92l-IQ&list=RDCMUCWwkUVHo7ryXLWGuwXY_uDA&index=3 -->

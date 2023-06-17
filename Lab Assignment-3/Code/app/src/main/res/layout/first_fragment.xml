@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMain"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!--Code Reference:
+     [1] https://www.youtube.com/watch?v=cvu57vVcA2M -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- Code Reference:
+    [2] https://www.youtube.com/watch?v=or_pH92l-IQ&list=RDCMUCWwkUVHo7ryXLWGuwXY_uDA&index=3
+    [3] https://medium.com/@ezatpanah/recyclerview-in-android-with-example-in-depth-guide-94462a6b573b -->
